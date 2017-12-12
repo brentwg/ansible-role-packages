@@ -1,0 +1,24 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: brentwg
+  description: A simple Ansible role used to install and update software packages.
+  company: N/A
+  license: N/A
+  min_ansible_version: 2.0
+  platforms:
+  - name: EL
+    versions:
+    - 7
+  - name: Fedora
+    versions:
+    - 27
+  - name: Ubuntu
+    versions:
+    - 16.04
+    - 17.10
+  galaxy_tags:
+  - system
+  - packages
+  - updates
