@@ -1,0 +1,5 @@
+---
+- name: Install software package updates
+  package:
+    name: "*"
+    state: "latest"

@@ -1,1 +1,3 @@
 ---
+# for software package updates
+install_package_updates: true
