@@ -1,20 +1,5 @@
 ---
-- name: Install software package updates (RHEL)
+- name: Install software package updates
   package:
     name: "*"
     state: "latest"
-  when: ansible_os_family == 'RedHat'
-
-- name: "Working around Ansible lameness..."
-  apt:
-    pkg: "{{ item }}"
-    state: latest
-  with_items:
-  - aptitude
-  when: ansible_os_family == 'Debian'
-
-- name: "Upgrade existing packages"
-  apt: 
-    update_cache: yes 
-    upgrade: yes
-  when: ansible_os_family == 'Debian'
