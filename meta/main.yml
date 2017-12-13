@@ -11,13 +11,9 @@ galaxy_info:
   - name: EL
     versions:
     - 7
-  - name: Fedora
-    versions:
-    - 27
   - name: Ubuntu
     versions:
     - 16.04
-    - 17.10
   galaxy_tags:
   - system
   - packages
