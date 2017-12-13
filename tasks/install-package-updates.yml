@@ -1,5 +1,12 @@
 ---
-- name: Install software package updates
+- name: Install software package updates (RHEL)
   package:
     name: "*"
     state: "latest"
+  when: ansible_os_family == 'RedHat'
+
+- name: Install software package updates (Debian)
+  apt:
+    name: "*"
+    state: latest
+  when: ansible_os_family == 'Debian'
