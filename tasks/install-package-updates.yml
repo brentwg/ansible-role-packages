@@ -1,4 +1,12 @@
 ---
+- name: "Working around an Ansible/Aptitude issue..."
+  apt:
+    pkg: "{{ item }}"
+    state: latest
+  with_items:
+  - aptitude
+  when: ansible_os_family == 'Debian'
+
 - name: Install software package updates
   package:
     name: "*"
