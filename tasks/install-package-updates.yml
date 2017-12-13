@@ -5,8 +5,16 @@
     state: "latest"
   when: ansible_os_family == 'RedHat'
 
-- name: Install software package updates (Debian)
+- name: "Working around Ansible lameness..."
   apt:
-    name: "*"
+    pkg: "{{ item }}"
     state: latest
+  with_items:
+  - aptitude
+  when: ansible_os_family == 'Debian'
+
+- name: "Upgrade existing packages"
+  apt: 
+    update_cache: yes 
+    upgrade: yes
   when: ansible_os_family == 'Debian'
