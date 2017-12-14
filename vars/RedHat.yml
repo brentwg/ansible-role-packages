@@ -2,5 +2,4 @@
 add_packages:
 - vim-enhanced
 
-remove_packages:
-- vim-minimal
+remove_packages: []
