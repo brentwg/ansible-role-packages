@@ -1,7 +1,6 @@
 services: docker
 
 env:
-- distro: fedora27
 - distro: ubuntu1710
 
 script:
