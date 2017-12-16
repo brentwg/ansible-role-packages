@@ -14,10 +14,12 @@ galaxy_info:
       - 7
   - name: Fedora
     versions:
-      - all
+      - 26
   - name: Ubuntu
     versions:
-      - all
+      - artful
+      - xenial
+      - trusty
   galaxy_tags:
   - system
   - packages
