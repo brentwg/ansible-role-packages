@@ -35,5 +35,5 @@ None.
     - vim-enhanced
     
   roles:
-    - path/to/ansible-role-packages
+    - brentwg.packages
 ```
