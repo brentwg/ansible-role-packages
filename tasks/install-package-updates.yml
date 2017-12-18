@@ -7,7 +7,14 @@
   - aptitude
   when: ansible_os_family == 'Debian'
 
-- name: Install software package updates
+- name: Install all software package updates
   package:
     name: "*"
     state: "latest"
+  when: install_all_package_updates
+
+- name: Install specified software package updates
+  package:
+    name: "{{ item }}"
+    state: latest
+  with_items: "{{ remove_packages }}"

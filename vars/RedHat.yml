@@ -1,5 +1,7 @@
 ---
-add_packages:
+install_packages:
 - vim-enhanced
 
 remove_packages: []
+
+update_packages: []

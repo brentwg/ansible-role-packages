@@ -1,6 +1,8 @@
 ---
-add_packages:
+install_packages:
 - vim
 
 remove_packages:
 - vim-tiny
+
+update_packages: []

@@ -2,7 +2,7 @@
 - name: Install additional software packages
   package:
     name: "{{ item }}"
-    state: latest
+    state: present
   with_items: "{{ add_packages }}"
 
 - name: Remove specified software packages
