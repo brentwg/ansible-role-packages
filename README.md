@@ -2,9 +2,9 @@
 
 [![Build Status](https://travis-ci.org/brentwg/ansible-role-packages.svg?branch=master)](https://travis-ci.org/brentwg/ansible-role-packages)
 
-A simple Ansible role used to install, remove, and update software packages.  
+A simple Ansible role used to install, remove, and update distrobution base repository software packages.  
 
-(Mostly this is a proof-of-concept so that I might force entry into the hallowed arena of automated build testing on GitHub...)  
+(No feature currently exists for enabling additional, third-party repositories.)  
 
 ## Requirements  
 None.  
