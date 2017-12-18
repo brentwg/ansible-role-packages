@@ -20,8 +20,6 @@ script:
   # Run tests.
   - ${PWD}/tests/test.sh
 
-  # Test to ensure that vim is installed
-  - docker exec --tty ${container_id} vim --version
-
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
+
