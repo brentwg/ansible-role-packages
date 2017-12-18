@@ -17,4 +17,4 @@
   package:
     name: "{{ item }}"
     state: latest
-  with_items: "{{ remove_packages }}"
+  with_items: "{{ update_packages }}"
