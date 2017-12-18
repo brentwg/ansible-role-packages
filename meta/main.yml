@@ -6,7 +6,7 @@ galaxy_info:
   description: A simple Ansible role used to install and update software packages.
   company: "None"
   license: "None"
-  min_ansible_version: 2.0
+  min_ansible_version: 2.4
   platforms:
   - name: EL
     versions:
