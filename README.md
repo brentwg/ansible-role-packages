@@ -7,7 +7,7 @@ A simple Ansible role used to install, remove, and update distrobution base repo
 (No feature currently exists for enabling additional, third-party repositories.)  
 
 ## Requirements  
-None.  
+Ansible minimum version: 2.4  
 
 ## Role Variables  
 Available variables, as well as their default values, are listed below (See `defaults/main.yml` and distro-specific files in `vars/*.yml`):  
