@@ -23,7 +23,7 @@ update_packages: []
 ```  
 `install_packages`, `remove_packages`, and `update_packages` expect to receive a list of package names that are specific to whichever Linux distribution you are running. For testing purposes, I added an appropriate variant of VIM (full version).  
 
-**NOTE**: If you've already set `install_all_package_updates` to `true`, then there is naturally no requirement to redundantly list specified packages; however, program logic would still allow this (since there is *probably* no harm done).  
+**NOTE**: If you've already set `install_all_package_updates` to `true`, then there is naturally no requirement to redundantly list additional packages in `update_packages`; however, program logic would still allow this (since there is *probably* no harm done).  
 ## Dependencies  
 None.  
 
